@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+    .form-group {
+      margin: 10px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>光标设置</h2>
+  <div class="form-group">
+    <label>
+      <input type="checkbox" id="enabled"> 启用光标规则
+    </label>
+  </div>
+  <div class="form-group">
+    <label>默认光标</label>
+    <select id="defaultCursor">
+      <option value="default">默认</option>
+      <option value="pointer">手型</option>
+      <option value="text">文本</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>悬停光标</label>
+    <select id="hoverCursor">
+      <option value="pointer">手型</option>
+      <option value="default">默认</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>文本光标</label>
+    <select id="textCursor">
+      <option value="text">文本</option>
+      <option value="default">默认</option>
+    </select>
+  </div>
+  <button id="save">保存设置</button>
+  <script src="popup.js"></script>
+</body>
+</html> 
